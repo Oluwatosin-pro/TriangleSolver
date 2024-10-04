@@ -29,7 +29,50 @@ namespace TriangleSolver.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        // Test 2: Isosceles triangle 
+        [Test]
+        public void IdentifyTriangle_IsoscelesTriangle_ReturnsIsosceles_1()
+        {
+            int firstSide = 4;
+            int secondSide = 6;
+            int thirdSide = 4;
 
+            string expected = "Isosceles triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        // Test 3: Isosceles triangle
+        [Test]
+        public void IdentifyTriangle_IsoscelesTriangle_ReturnsIsosceles_2()
+        {
+            int firstSide = 5;
+            int secondSide = 5;
+            int thirdSide = 7;
+
+            string expected = "Isosceles triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        // Test 4: Isosceles triangle
+        [Test]
+        public void IdentifyTriangle_IsoscelesTriangle_ReturnsIsosceles_3()
+        {
+            int firstSide = 5;
+            int secondSide = 2;
+            int thirdSide = 5;
+
+            string expected = "Isosceles triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
