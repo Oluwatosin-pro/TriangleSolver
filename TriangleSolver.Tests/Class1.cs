@@ -74,5 +74,82 @@ namespace TriangleSolver.Tests
             Assert.AreEqual(expected, actual);
         }
 
+
+        //-	Five (5) tests for a valid scalene triangle
+
+
+        // Test 5: Scalene triangle
+        [Test]
+        public void IdentifyTriangle_ScaleneTriangle_ReturnsScalene_1()
+        {
+            int firstSide = 5;
+            int secondSide = 8;
+            int thirdSide = 10;
+
+            string expected = "Scalene triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        // Test 6: Scalene triangle
+        [Test]
+        public void IdentifyTriangle_ScaleneTriangle_ReturnsScalene_2()
+        {
+
+            int firstSide = 999;
+            int secondSide = 1000;
+            int thirdSide = 1002;
+
+            string expected = "Scalene triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+        // Test 7: Scalene triangle
+        [Test]
+        public void IdentifyTriangle_ScaleneTriangle_ReturnsScalene_3()
+        {
+            int firstSide = 5;
+            int secondSide = 2;
+            int thirdSide = 4;
+
+            string expected = "Scalene triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+        // Test 8: Scalene triangle
+        [Test]
+        public void IdentifyTriangle_ScaleneTriangle_ReturnsScalene_4()
+        {
+            int firstSide = 20;
+            int secondSide = 13;
+            int thirdSide = 26;
+
+            string expected = "Scalene triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+        // Test 9: Scalene triangle
+        [Test]
+        public void IdentifyTriangle_ScaleneTriangle_ReturnsScalene_5()
+        {
+            int firstSide = 90;
+            int secondSide = 4;
+            int thirdSide = 93;
+
+            string expected = "Scalene triangle";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
