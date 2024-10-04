@@ -203,5 +203,52 @@ namespace TriangleSolver.Tests
 
         }
 
+        //-	Three (3) tests for verifying an invalid response (other than a zero length)
+
+        // Test 13 - Invalid triangle
+        [Test]
+        public void IdentifyInvalidTriangle_ReturnInvalid_1()
+        {
+            int firstSide = 8;
+            int secondSide = 4;
+            int thirdSide = 3;
+
+            string expected = "INVALID!!";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        //Test 14 Invalid triangle
+        [Test]
+        public void IdentifyInvalidTriangle_ReturnInvalid_2()
+        {
+            int firstSide = 9;
+            int secondSide = 3;
+            int thirdSide = 6;
+
+            string expected = "INVALID!!";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        //Test 15 Invalid triangle
+        [Test]
+        public void IdentifyInvalidTriangle_ReturnInvalid_3()
+        {
+            int firstSide = 7;
+            int secondSide = 2;
+            int thirdSide = 4;
+
+            string expected = "INVALID!!";
+            var actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
